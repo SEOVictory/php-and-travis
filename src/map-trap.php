@@ -1,6 +1,7 @@
 <?php
 
-class MapTrap {
+class MapTrap
+{
   function __invoke()
   {
   }
