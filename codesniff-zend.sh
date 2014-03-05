@@ -23,7 +23,6 @@ RESULT=0
 while read fn; do
     $PHPCS --standard=$STANDARD "$fn"
     RESULT=$(($? + $RESULT))
-    echo $RESULT
 done < <(find . -name "*.php")
 
 exit $RESULT
